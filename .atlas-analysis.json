@@ -1,0 +1,110 @@
+{
+  "projectType": "saas",
+  "projectName": "SmartPyme",
+  "projectDescription": "SmartPyme is a cloud-based business management platform for SMEs covering sales, inventory, purchasing, accounting, payroll, electronic invoicing, and restaurant operations.",
+  "theme": "almond",
+  "primaryColor": "#2c97eb",
+  "lightColor": null,
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "account-setup"
+            ]
+          },
+          {
+            "group": "Core Modules",
+            "pages": [
+              "modules/sales",
+              "modules/inventory",
+              "modules/purchasing",
+              "modules/accounting"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "features/electronic-invoicing",
+              "features/payroll",
+              "features/restaurant",
+              "features/loyalty",
+              "features/reports-dashboard"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/woocommerce-shopify",
+              "integrations/whatsapp",
+              "integrations/webhooks"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/rate-limits",
+              "api/pagination"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/sales",
+              "api/inventory",
+              "api/returns"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Point-of-sale and sales management with quotations, returns, and recurring sales",
+    "Multi-warehouse inventory management with stock tracking, batch lots, and product transfers",
+    "Electronic invoicing (DTE) compliant with El Salvador Ministry of Finance",
+    "Purchasing management with purchase orders, supplier accounts payable, and expense tracking",
+    "Accounting module with IVA books, assets, petty cash, and project budgets",
+    "Payroll module with employee management, salary calculation, bonuses, and loans",
+    "Restaurant module with table maps, kitchen orders, reservations, and pre-billing",
+    "Customer loyalty program with points, tiers, and redemption",
+    "Customizable analytics dashboard with charts for sales, expenses, and inventory",
+    "External API for B2B third-party integrations (read-only, API Key auth)",
+    "WooCommerce and Shopify integrations for e-commerce sync",
+    "WhatsApp integration for customer communication",
+    "Multi-branch (sucursales) and multi-user support with role-based access"
+  ],
+  "publicApiSurface": [
+    "GET /api/external/v1/sales",
+    "GET /api/external/v1/sales/{id}",
+    "GET /api/external/v1/sales/summary",
+    "GET /api/external/v1/inventory",
+    "GET /api/external/v1/inventory/{id}",
+    "GET /api/external/v1/inventory/summary",
+    "GET /api/external/v1/returns",
+    "GET /api/external/v1/returns/{id}",
+    "GET /api/external/v1/returns/summary",
+    "GET /api/external/v1/system/rate-limit",
+    "POST /api/external/v1/packages/import"
+  ]
+}
